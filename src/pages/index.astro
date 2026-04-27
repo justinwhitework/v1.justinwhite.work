@@ -16,61 +16,12 @@ import SidePane from "../components/layouts/controlPane/pane.astro";
 
 <Root title="Home - Justinwhite.work">
   <div
-    class="
-    h-screen w-screen overflow-hidden p-2 flex flex-row gap-2
-    bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] 
-    bg-[size:24px_24px] bg-base-200
-    "
+    class="h-screen w-screen overflow-hidden p-2 flex flex-row gap-2
+    bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)]
+    bg-[size:24px_24px] bg-base-200"
     data-theme="prime100"
   >
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <RootContent class="max-w-2xl w-full flex flex-col gap-10 opacity-80">
-
-      <section>
-        <p class="mb-3 text-primary text-2xl font-bold tracking-widest">// justinwhite.work</p>
-      </section>
-      
-      <section>
-        <p class="mb-3 text-primary font-bold tracking-widest">// ACTIVE_PROJECTS</p>
-        <ul class="list-none p-0 flex flex-col gap-2">
-          {projects.map(project => (
-            <li>
-              {project.url ? (
-                <a href={project.url} target="_blank" rel="noopener noreferrer" class="hover:text-white hover:underline transition-all">
-                  {project.name} <span class="opacity-30 text-xs ml-1">-> {project.url.replace('https://', '')}</span>
-                </a>
-              ) : (
-                <span>{project.name}</span>
-              )}
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section>
-        <p class="mb-3 text-primary font-bold tracking-widest">// CONTACT_GATEWAY</p>
-        <div class="flex flex-col gap-2">
-          {contactLinks.map(link => (
-            <a 
-              href={link.type === 'email' ? `mailto:${link.value}` : link.value} 
-              target={link.type === 'link' ? "_blank" : undefined}
-              class="hover:text-white hover:underline transition-all group"
-            >
-              {link.label} <span class="opacity-30 text-xs ml-1">-> {link.value.replace('https://', '')}</span>
-            </a>
-          ))}
-        </div>
-      </section>
-
-      <div class="pt-6 border-t border-white/5 italic opacity-40 text-xs uppercase tracking-tighter">
-        Main interface offline. Systems in development.
-      </div>
-=======
     <SidePane />
->>>>>>> parent of 0f7133d (deactivation)
-=======
->>>>>>> parent of 4dd26c5 (ud2)
 
     <RootContent class="md:flex hidden">
       <MDViewport
@@ -81,6 +32,5 @@ import SidePane from "../components/layouts/controlPane/pane.astro";
         client:only="react"
       />
     </RootContent>
-
   </div>
 </Root>
