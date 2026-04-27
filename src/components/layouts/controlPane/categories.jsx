@@ -113,19 +113,36 @@ const ALL_ITEMS = [
   },
 
   {
-    id: "sprkde",
+    id: "koda",
     type: "container", // Special type for parent cards
-    icon: "/icos/SprkPurp.png",
-    name: "Colorama",
-    chips: ["Sparkade", "Game Development"],
+    icon: "/icos/KodaIcon.png",
+    name: "Koda",
+    chips: ["Founder", "Web development"],
     categories: ["Projects", "Highlights", "Experience", "All"],
+    //link: "https://koda.sh",
     highlight: false,
-    link: "https://www.roblox.com/communities/731176287/Sparkade",
     linkCreatesTab: true,
 
     // Children can be other items
     children: [
-      
+
+    ],
+  },
+
+  {
+    id: "sparkade",
+    type: "container", // Special type for parent cards
+    icon: "/icos/SprkPurpDuo.png",
+    name: "Sparkade",
+    chips: ["Cofounder", "Game Development"],
+    categories: ["Experience", "All"],
+    link: "https://github.com/Sparkade-Studio",
+    highlight: false,
+    linkCreatesTab: true,
+
+    // Children can be other items
+    children: [
+
     ],
   },
 
@@ -140,7 +157,7 @@ const ALL_ITEMS = [
 
     // Children can be other items
     children: [
-      
+
     ],
   },
 
